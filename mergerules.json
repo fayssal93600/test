@@ -1,0 +1,662 @@
+{
+    "fileContentValidation": {
+        "source": "morningstar",
+        "dataset": "wendy",
+        "encoding": "UTF-8",
+        "type": "csv",
+        "filenameRegex": "(?<date>[0-9]{8}_[0-9]{6})_(?<dataset>Wendy)",
+        "tabulatedFile": {
+            "separator": ";",
+            "textQuotation": "\"",
+            "hasHeader": true,
+            "hasFooter": false,
+            "columns": [
+                {
+                    "order": 1,
+                    "header": "peerGroup",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": false}
+                    ]
+                },
+                {
+                    "order": 2,
+                    "header": "scopeName",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": false}
+                    ]
+                },
+                {
+                    "order": 3,
+                    "header": "currency",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": false}
+                    ]
+                },
+                {
+                    "order": 4,
+                    "header": "groupedBy",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 5,
+                    "header": "calculatedOn",
+                    "format": "timestamp",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 6,
+                    "header": "exportedOn",
+                    "format": "timestamp",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 7,
+                    "header": "isin",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 8,
+                    "header": "groupInvestment",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": true},
+                        {"maxLength": 30}
+                    ]
+                },
+                {
+                    "order": 9,
+                    "header": "baseCurrency",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": true},
+                        {"maxLength": 30}
+                    ]
+                },
+                {
+                    "order": 10,
+                    "header": "returnDate",
+                    "format": "date",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 11,
+                    "header": "fundSize",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 12,
+                    "header": "flowYTD",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 13,
+                    "header": "morningstarRatingOverall",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 14,
+                    "header": "inceptionDate",
+                    "format": "date",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 15,
+                    "header": "inceptionDateOfFundsOldestShareClass",
+                    "format": "date",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 16,
+                    "header": "morningstarCategory",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 17,
+                    "header": "KIIDOngoingCharge",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 18,
+                    "header": "EuSfdrFundType",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 24,
+                    "header": "EU_Sustainable_Finance_Disclosure_Regulation_Minimum_Or_Planned_Investments_Sustainable_Investments_Taxonomy_Aligned",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 25,
+                    "header": "Minimum_Percentage_Investments_Aligned_EU_Taxonomy_Including_Sovereign_Bonds",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 26,
+                    "header": "Principle_Adverse_Impact_Consideration",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 27,
+                    "header": "ISR_EMT",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 28,
+                    "header": "Towards_Sustainability_EMT",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 29,
+                    "header": "GlobalCategory",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 30,
+                    "header": "SustainableInvestmentOverall",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 31,
+                    "header": "MorningstarSustainabilityRating",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 32,
+                    "header": "LowCarbonDesignation",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 33,
+                    "header": "PAI_Scope_1_GHG_EmissionsTonnes",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 34,
+                    "header": "PAI_Scope_1_2_3_GHG_EmissionsTonnes",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 35,
+                    "header": "PAI_Carbon_Footprint_Scope_1_2_Tonnes_Per_EURm",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 36,
+                    "header": "PAI_Carbon_Footprint_Scope_1_2_3_Tonnes_Per_EURm",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 37,
+                    "header": "PAI_GHG_Intensity_Scope_1_2_Average_Value",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 38,
+                    "header": "PAI_GHG_Intensity_Scope_1_2_3_Average_Value",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 39,
+                    "header": "PAI_Fossil_Fuel_%_of_Covered_Portfolio_Involved",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 40,
+                    "header": "PAI_Fossil_Fuel_%_of_Portfolio_Involved",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 41,
+                    "header": "PAI_Fossil_Fuel_%_of_Eligible_Portfolio_Involved",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 42,
+                    "header": "PAI_Non_Renewable_%_Energy_Consumption_Average_Value",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 43,
+                    "header": "PAI_Non_Renewable_of_Energy_Production_Average_Value",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 44,
+                    "header": "PAI_Energy_Consumption_Intensity_NACE_A_Average_Value",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 45,
+                    "header": "PAI_Energy_Consumption_Intensity_NACE_B_Average_Value",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 46,
+                    "header": "PAI_Energy_Consumption_Intensity_NACE_C_Average_Value",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 47,
+                    "header": "PAI_Energy_Consumption_Intensity_NACE_D_Average_Value",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 48,
+                    "header": "PAI_Energy_Consumption_Intensity_NACE_E_Average_Value",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 49,
+                    "header": "PAI_Energy_Consumption_Intensity_NACE_F_Average_Value",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 50,
+                    "header": "PAI_Energy_Consumption_Intensity_NACE_G_Average_Value",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 51,
+                    "header": "PAI_Energy_Consumption_Intensity_NACE_H_Average_Value",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 52,
+                    "header": "PAI_Energy_Consumption_Intensity_NACE_L_Average_Value",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 53,
+                    "header": "PAI_Negative_Affect_On_Biodiversity_%_Portfolio_Involved",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 54,
+                    "header": "PAI_Emissions_Water_Tonnes_Per_EURm",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 55,
+                    "header": "PAI_Hazardous_Waste_Tonnes_Per_EURm",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 56,
+                    "header": "PAI_Ungc_Lack_Compliance_Mechanisms_%_Portfolio_Involved",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 57,
+                    "header": "PAI_Ungc_Principles_OECD_Guidelines_Violations_%_Portfolio_Involved",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 58,
+                    "header": "PAI_Gender_Pay_Gap_Average_Value",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 59,
+                    "header": "PAI_Percentage_Female_Board_Members_Average_Value",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 60,
+                    "header": "PAI_Controversial_Weapons_%_Eligible_Portfolio_Involved",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": true}
+                    ]
+                },
+                {
+                    "order": 19,
+                    "header": "metricPeriodType",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": false}
+                    ]
+                },
+                {
+                    "order": 20,
+                    "header": "startDate",
+                    "format": "date",
+                    "rules": [
+                        {"canBeNullOrEmpty": false}
+                    ]
+                },
+                {
+                    "order": 21,
+                    "header": "endDate",
+                    "format": "date",
+                    "rules": [
+                        {"canBeNullOrEmpty": false}
+                    ]
+                },
+                {
+                    "order": 22,
+                    "header": "metricType",
+                    "format": "string",
+                    "rules": [
+                        {"canBeNullOrEmpty": false}
+                    ]
+                },
+                {
+                    "order": 23,
+                    "header": "metricValue",
+                    "format": "float",
+                    "rules": [
+                        {"canBeNullOrEmpty": false}
+                    ]
+                }                
+            ]
+        }
+    },
+    "tableContent" : {
+        "source": "morningstar",
+        "dataset": "wendy",
+        "dba": "morningstar_staging",
+        "type": "csv",
+        "path": "/morningstar/wendy/deltatable",
+        "partitionKeys": [],
+        "vacuum": 720,
+        "schema": {
+            "type": "struct",
+            "fields": [
+                {"name": "peerGroup", "type": "string", "nullable": false, "metadata": {}},
+                {"name": "scopeName", "type": "string", "nullable": false, "metadata": {}},
+                {"name": "currency", "type": "string", "nullable": false, "metadata": {}},
+                {"name": "groupedBy", "type": "string", "nullable": true, "metadata": {}},
+                {"name": "calculatedOn", "type": "timestamp", "nullable": true, "metadata": {}},
+                {"name": "exportedOn", "type": "timestamp", "nullable": true, "metadata": {}},
+                {"name": "isin", "type": "string", "nullable": true, "metadata": {}},
+                {"name": "groupInvestment", "type": "string", "nullable": true, "metadata": {}},
+                {"name": "baseCurrency", "type": "string", "nullable": true, "metadata": {}},
+                {"name": "returnDate", "type": "date", "nullable": true, "metadata": {}},
+                {"name": "fundSize", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "flowYTD", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "morningstarRatingOverall", "type": "string", "nullable": true, "metadata": {}},
+                {"name": "inceptionDate", "type": "date", "nullable": true, "metadata": {}},
+                {"name": "inceptionDateOfFundsOldestShareClass", "type": "date", "nullable": true, "metadata": {}},
+                {"name": "morningstarCategory", "type": "string", "nullable": true, "metadata": {}},
+                {"name": "KIIDOngoingCharge", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "EU_Sustainable_Finance_Disclosure_Regulation_Minimum_Or_Planned_Investments_Sustainable_Investments_Taxonomy_Aligned", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "Minimum_Percentage_Investments_Aligned_EU_Taxonomy_Including_Sovereign_Bonds", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "Principle_Adverse_Impact_Consideration", "type": "string", "nullable": true, "metadata": {}},
+                {"name": "ISR_EMT", "type": "string", "nullable": true, "metadata": {}},
+                {"name": "Towards_Sustainability_EMT", "type": "string", "nullable": true, "metadata": {}},
+                {"name": "GlobalCategory", "type": "string", "nullable": true, "metadata": {}},
+                {"name": "SustainableInvestmentOverall", "type": "string", "nullable": true, "metadata": {}},
+                {"name": "MorningstarSustainabilityRating", "type": "string", "nullable": true, "metadata": {}},
+                {"name": "LowCarbonDesignation", "type": "string", "nullable": true, "metadata": {}},
+                {"name": "PercentAUMCoveredCarbon", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Scope_1_GHG_EmissionsTonnes", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Scope_1_2_3_GHG_EmissionsTonnes", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Carbon_Footprint_Scope_1_2_Tonnes_Per_EURm", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Carbon_Footprint_Scope_1_2_3_Tonnes_Per_EURm", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_GHG_Intensity_Scope_1_2_Average_Value", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_GHG_Intensity_Scope_1_2_3_Average_Value", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Fossil_Fuel_%_of_Covered_Portfolio_Involved", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Fossil_Fuel_%_of_Portfolio_Involved", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Fossil_Fuel_%_of_Eligible_Portfolio_Involved", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Non_Renewable_%_Energy_Consumption_Average_Value", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Non_Renewable_of_Energy_Production_Average_Value", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Energy_Consumption_Intensity_NACE_A_Average_Value", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Energy_Consumption_Intensity_NACE_B_Average_Value", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Energy_Consumption_Intensity_NACE_C_Average_Value", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Energy_Consumption_Intensity_NACE_D_Average_Value", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Energy_Consumption_Intensity_NACE_E_Average_Value", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Energy_Consumption_Intensity_NACE_F_Average_Value", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Energy_Consumption_Intensity_NACE_G_Average_Value", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Energy_Consumption_Intensity_NACE_H_Average_Value", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Energy_Consumption_Intensity_NACE_L_Average_Value", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Negative_Affect_On_Biodiversity_%_Portfolio_Involved", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Emissions_Water_Tonnes_Per_EURm", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Hazardous_Waste_Tonnes_Per_EURm", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Ungc_Lack_Compliance_Mechanisms_%_Portfolio_Involved", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Ungc_Principles_OECD_Guidelines_Violations_%_Portfolio_Involved", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Gender_Pay_Gap_Average_Value", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Percentage_Female_Board_Members_Average_Value", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "PAI_Controversial_Weapons_%_Eligible_Portfolio_Involved", "type": "float", "nullable": true, "metadata": {}},
+                {"name": "EuSfdrFundType", "type": "string", "nullable": true, "metadata": {}},
+                {"name": "metricPeriodType", "type": "string", "nullable": false, "metadata": {}},
+                {"name": "startDate", "type": "date", "nullable": false, "metadata": {}},
+                {"name": "endDate", "type": "date", "nullable": false, "metadata": {}},
+                {"name": "metricType", "type": "string", "nullable": false, "metadata": {}},
+                {"name": "metricValue", "type": "float", "nullable": false, "metadata": {}}
+            ]
+        },
+        "mergeRules": [
+            {
+                "type": "on",
+                "currentColumn": "Staging.integrationDatetime",
+                "newColumn": "Raw.integrationDatetime",
+                "operator": "<"
+            },
+            {
+                "type": "on",
+                "currentColumn": "Staging.data.isin",
+                "newColumn": "Raw.data.isin",
+                "operator": "="
+            },
+			{
+                "type": "on",
+                "currentColumn": "Staging.data.peerGroup",
+                "newColumn": "Raw.data.peerGroup",
+                "operator": "="
+            },
+			{
+                "type": "on",
+                "currentColumn": "Staging.data.scopeName",
+                "newColumn": "Raw.data.scopeName",
+                "operator": "="
+            },
+			{
+                "type": "on",
+                "currentColumn": "Staging.data.currency",
+                "newColumn": "Raw.data.currency",
+                "operator": "="
+            },
+			{
+                "type": "on",
+                "currentColumn": "Staging.data.groupInvestment",
+                "newColumn": "Raw.data.groupInvestment",
+                "operator": "="
+            },
+			{
+                "type": "on",
+                "currentColumn": "Staging.data.calculatedOn",
+                "newColumn": "Raw.data.calculatedOn",
+                "operator": "="
+            },
+            {
+                "type": "on",
+                "currentColumn": "Staging.data.exportedOn",
+                "newColumn": "Raw.data.exportedOn",
+                "operator": "="
+            },
+            {
+                "type": "on",
+                "currentColumn": "Staging.data.metricPeriodType",
+                "newColumn": "Raw.data.metricPeriodType",
+                "operator": "="
+            },
+            {
+                "type": "on",
+                "currentColumn": "Staging.data.startDate",
+                "newColumn": "Raw.data.startDate",
+                "operator": "="
+            },
+            {
+                "type": "on",
+                "currentColumn": "Staging.data.endDate",
+                "newColumn": "Raw.data.endDate",
+                "operator": "="
+            },
+            {
+                "type": "on",
+                "currentColumn": "Staging.data.metricType",
+                "newColumn": "Raw.data.metricType",
+                "operator": "="
+            },
+            {
+                "type": "on",
+                "currentColumn": "Staging.data.metricValue",
+                "newColumn": "Raw.data.metricValue",
+                "operator": "="
+            },
+            {
+                "type": "on",
+                "currentColumn": "Staging.data.baseCurrency",
+                "newColumn": "Raw.data.baseCurrency",
+                "operator": "="
+            }
+        ],
+        "matchedConditions": "",
+        "notMatchedConditions": ""
+    }
+}
